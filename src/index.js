@@ -1,4 +1,3 @@
-
 /*
 Using build - in function Math.min() in conjunction
 with Spread syntax(...) described in
@@ -10,7 +9,7 @@ exports.min = function min(array) {
         return 0;
         //applying Math.min and Spread syntax
     } else {
-        return Math.min(...array)
+        return Math.min(...array);
     }
 }
 
@@ -25,7 +24,7 @@ exports.max = function max(array) {
         return 0;
         //applying Math.max and Spread syntax
     } else {
-        return Math.max(...array)
+        return Math.max(...array);
     }
 }
 
@@ -38,16 +37,17 @@ exports.avg = function avg(array) {
         if (typeof array === 'undefined' || array.length === 0) {
             return 0;
         } else {
-          // creating variable with 0 integer parameter
-          // that will be updated during each cycle
-          let total = 0;
-          // creating cycle equal to array length
-          // setting counter to 0 and step equal to one
-          for (let i=0; i<array.length;i++) {
-            //updating sum of total on each loop
-            total += array[i];
-          }
-          // returning average of array
-          //by dividing sum of total by array.length
-           return total / array.length;
+            /* creating variable with 0 integer parameter
+            that will be updated during each cycle*/
+            let total = 0;
+            // creating cycle equal to array length
+            // setting counter to 0 and step equal to one
+            for (let i = 0; i < array.length; i++) {
+                //updating sum of total on each loop
+                total += array[i];
+            }
+            // returning average of array
+            //by dividing sum of total by array.length
+            return total / array.length;
         }
+      }
